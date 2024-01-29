@@ -12,7 +12,7 @@
         <div class="titulo"><h1>Conversor de monedas Nacional</h1></div>
         
         <div class="convertidor">
-            <form onsubmit="buscarValor(); return false;">
+            <form id="miFormulario">
                 <label for="campoTexto">Pesos CLP:</label>
                 <br>
                 <input class="ingreso" type="text" id="campoTexto" name="campoTexto" placeholder="Ingrese monto en CLP">
@@ -26,7 +26,6 @@
                     <option value="euro">Euro</option>
                     <option value="bitcoin">Bitcoin</option>
                     <option value="uf">Unidad de fomento (UF)</option>
-                    
                 </select>
                 <br>
                 <input class="boton" type="submit" value="Buscar">
