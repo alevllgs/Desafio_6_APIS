@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    background-color: bisque;
+
+    text-align: center;
+}
+
+
+.convertidor{
+    background-color: blueviolet;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.ingreso {
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.boton{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+label{
+    background-color: brown;
+    text-align: center;
+}

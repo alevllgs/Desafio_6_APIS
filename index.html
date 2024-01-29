@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    
 </head>
 <body>
-
-    <h1>Conversor de monedas Nacional</h1>
-
-    <form>
-        <label for="campoTexto">Pesos CLP:</label>
-        <input type="text" id="campoTexto" name="campoTexto" placeholder="Ingrese monto en CLP">
-
-        <br>
-
-        <label for="listaDesplegable">Moneda a convertir:</label>
+    <body>
+        <div class="titulo"><h1>Conversor de monedas Nacional</h1></div>
         
-        <select id="listaDesplegable" name="listaDesplegable">
-            <option value="" disabled selected>Seleccione moneda</option>
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
+        <div class="convertidor">
+            <form onsubmit="buscarValor(); return false;">
+                <label for="campoTexto">Pesos CLP:</label>
+                <br>
+                <input class="ingreso" type="text" id="campoTexto" name="campoTexto" placeholder="Ingrese monto en CLP">
+                <br>
+                <label for="listaDesplegable">Moneda a convertir:</label>
+                <br>
+                <select id="listaDesplegable" name="listaDesplegable">
+                    <option value="" disabled selected>Seleccione moneda</option>
+                    <option value="utm">Unidad Tributaria Mensual (UTM)</option>
+                    <option value="dolar">Dólar observado</option>
+                    <option value="euro">Euro</option>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="uf">Unidad de fomento (UF)</option>
+                    
+                </select>
+                <br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+    
+            <div id="resultado"></div>
+        </div>
+    
+        <script src="assets\js\script.js"></script>
+    </body>
 
-        </select>
-
-        <br>
-
-        <input type="submit" value="Buscar">
-    </form>
-    <div>
-        <canvas></canvas> 
-        <!--/*para hacer el grafico*/-->
-    </div>
-    <script src="assets\js\script.js"></script>
 </body>
-</html> 
+</html>
